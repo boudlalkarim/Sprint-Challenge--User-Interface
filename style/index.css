@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -145,6 +145,11 @@ footer nav a {
     text-decoration: none;
 }
 
+
+  body, .container {
+      width: 100%;
+  }
+
  .top-nav {
      display:flex;
      align-items: baseline;
@@ -214,7 +219,7 @@ footer nav a:hover{
     color:orangered;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 500px) {
     .top-nav {
         width: 100%;
         flex-direction: column;
@@ -228,6 +233,15 @@ footer nav a:hover{
         margin-top: 10px;
     }
 
+
+    .header img {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border: solid 2px black;
+        padding: 5%;
+        margin:30px 0 30px 50%;
+      }
     .top-content {
         width: 100%;
         flex-direction: column;
@@ -237,15 +251,19 @@ footer nav a:hover{
         margin:30px 0 30px 50%;
 
     }
-  .header img {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    border: solid 2px black;
-    padding: 5%;
-    margin:30px 0 30px 50%;
-  }
+ .boxes {
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
 
+   
+ }
+
+  .boxes .box{
+      width: 100%;
+
+
+}
   .middle-content {
     width: 100%;
     flex-direction: column;
@@ -254,7 +272,6 @@ footer nav a:hover{
     padding: 5%;
     margin:30px 0 30px 50%;
   }
-
 
   .bottom-content {
     width: 100%;
@@ -265,11 +282,15 @@ footer nav a:hover{
     margin:30px 0 30px 50%;
   }
 
-  .nav a{
+  footer {
     width: 100%;
     flex-direction: column;
-    align-items: center;
+   
     border: solid 2px black;
     padding: 5%;
     margin:30px 0 30px 50%;
+    justify-content: center;
+    
  }
+ 
+ 
